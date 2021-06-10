@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Languages</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+   <style>
+   nav{
+     background-color:#cc99ff;
+   }
+   *{
+     padding:0;
+     margin:0;
+      /* overflow-x: hidden; */
+
+   }
+
+.navbar-brand{
+  font-size:25px;
+  }
+
+    img{
+      margin-top:-5px;
+      margin-right:5px;
+    }
+
+
+footer{
+  background:#cc99ff;
+  height:150px;
+}
+
+footer img{
+  position:relative;
+  left:100px;
+  top:10px;
+
+
+}
+
+footer p{
+  position:relative;
+  font-size:30px;
+  font-weight:bold;
+  left:100px;
+  top:20px;
+}
+
+#mail{
+position:relative;
+left:600px;
+bottom:40px;
+font-size:30px;
+color:black;
+font-weight:bold;
+}
+
+#mail_img{
+  position:relative;
+  top:50px;
+
+}
+
+ul li{
+  font-size:20px;
+}
+
+#tut ul li{
+    list-style:none;
+}
+
+#para{
+    font-weight:bold;
+    font-size:30px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration:underline;
+    text-align:center;
+    padding-top:10px;
+
+}
+
+#video{
+    font-family: 'Dancing Script', cursive;
+    font-size:20px;
+}
+
+h3{
+    font-family: 'Indie Flower', cursive;
+    font-size:40px;
+    text-align:center;
+    text-decoration:underline;
+
+}
+
+#qstn {
+padding:15px 30px;
+}
+
+#qstn1{
+  font-family: 'Caveat', cursive;
+  font-size:20px;
+  font-weight:bold;
+
+}
+
+#video a{
+  padding:0 30px;
+}
+ @media (max-width:567px){
+      .navbar-brand{
+        font-size:20px;
+      }
+
+    .navbar-toggler{
+        font-size:20px;
+      }
+
+      ul.navbar-nav{
+        font-size:18px;
+      
+      }
+
+      ul:hover{
+        cursor;
+      }
+
+     
+      ul li{
+        font-size:15px;
+      }
+      #para{
+        font-size:18px;
+      }
+
+      #video{
+        font-size:17px;
+      }
+     footer img{
+        position:relative;
+        left:5px;
+        top:5px;
+        width:30px;
+        height:25px;
+      }
+
+      footer p{
+        position:relative;
+        font-size:20px;
+        font-weight:bold;
+        left:05px;
+        top:20px;
+      }
+
+    #mail{
+position:relative;
+left:90px;
+bottom:25px;
+font-size:20px;
+
+}
+
+#mail_img{
+  position:relative;
+  top:30px;
+  left:38px;
+  height:22px;
+  width:30px;
+
+}
+
+footer{
+  padding:20px 0;
+}
+ }
+ </style>
+</head>
+<body>
+
+<!--Navbar starts -->
+   <nav class="navbar navbar-expand-sm navbar-light ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" width="35" height="30">Ex<strong>WEB</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="second.html">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="third.html">Tutorials</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--main section starts-->
+
+<main>
+<p id="para">Best Tutorials for learning Web Development</p>
+
+<div id="tut">
+<ul>
+<li><a href="https://www.javatpoint.com/html-tutorial" target="#">Javatpoint.com</a></li>
+<li><a href="https://www.tutorialspoint.com/internet_technologies/websites_development.htm" target="#">Tutorialspoint.com</a></li>
+<li><a href="https://www.w3schools.com/html/" target="#">w3school.com</a></li>
+</div>
+
+<div id="video">
+<p>In this link,You can watch videos for better understanding:
+</p>
+<a href="https://www.codewithharry.com/videos" target="#">codewithharry.com</a></div>
+
+<h3>Questions:</h3>
+<div id="qstn">
+<p id="qstn1">1. How can i show our project to anyone?</p>
+<p><strong>ANS.</strong> You have to basic knowledge about git and github because it helps to upload your project and also provide you the <strong>github link</strong>.
+you can use that link to show your work to friends as well as reputated firm,it can increase your chances to get a <strong>JOB</strong>.</p>
+
+<p id="qstn1">2. Why do i need this,when a website can be made with wordpress?</p>
+<p><strong>ANS.</strong> WordPress is a flexible CMS that allows multiple users to create and run a website without coding. While much easier to customize than an HTML site, a WordPress site will be more difficult to maintain. With an HTML website, you won’t have to worry about plugin compatibility or site maintenance. However, because you’ll need a developer to make any changes, you’ll have little control over your site.And if you want to control your own website,you must have knowledge about all these languages.</p>
+
+</div>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer starts-->
+<footer>
+   <p>Follow me on:</p>
+   <a href="https://github.com/himaniyadavv/" target="#"><img src="github.png" width="60" height="45"></a>
+   <a href="https://www.instagram.com/himani.ydv99/" target="#"><img src="instagram.jpg" width="55" height="45"></a>
+   <a href="https://www.facebook.com/profile.php?id=100063504595041" target="#"><img src="fb.jpg" width="55" height="45"></a>
+  <a id="mail" href="mailto:himani30y@gmail.com"><img id="mail_img" src="mail.jpg" width="70" height="45">Email us:</a>
+</footer>
+<!--footer end-->
+</body>
+</html>
